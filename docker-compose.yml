@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  ubuntu-haskell-stack-amd64:
+    image: "vladimirlogachev/ubuntu-haskell-stack-amd64"
+    build:
+      dockerfile: "Dockerfile.ubuntu-haskell-stack-amd64"
+      context: .
+
+  stack-amd64-lts-16.27:
+    image: "vladimirlogachev/stack-amd64-lts-16.27"
+    build:
+      dockerfile: "Dockerfile.stack-amd64-lts-16.27"
+      context: .
